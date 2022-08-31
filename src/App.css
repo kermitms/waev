@@ -1,41 +1,107 @@
-/* #root {
-  max-width: 1280px;
+#root {
+  max-width: 640px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
+}
+
+.nes-list {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.waev-mode-name-desc {
+  font-size: 0.8rem;
+}
+.waev-mode-name-desc p:first-child {
+  margin: 0px;
+}
+
+.waev-mode-selector-container {
   text-align: center;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
+.waev-mode-selector-container .waev-mode-selector {
+  display: flex;
+  justify-content: space-evenly;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.waev-mode-selector-container .waev-mode-selector-btn {
+  width: 120px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.waev-gamemode {
+  display: flex;
+  justify-content: center;
+}
+.waev-gamemode .waev-gamemode-container {
+  width: 375px;
+}
+.waev-gamemode .waev-gamemode-quiz-score {
+  padding: 5px 0;
+  text-align: center;
+}
+.waev-gamemode .waev-gamemode-quiz-alternatives {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.waev-gamemode .waev-gamemode-quiz-alternatives li {
+  padding: 5px 0;
+}
+.waev-gamemode .waev-gamemode-quiz-alternatives .waev-gamemode-quiz-alternatives-text {
+  padding: 10px 0;
+}
+
+.waev-gamemode-quiz-finalscore .waev-gamemode-quiz-finalscore-text {
+  padding: 5px 0;
+  text-align: center;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.waev-gamemode-quiz-finalscore .waev-gamemode-quiz-finalscore-text span {
+  padding: 5px 0;
+}
+.waev-gamemode-quiz-finalscore .waev-gamemode-quiz-finalscore-btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.waev-mode-name {
+  margin-top: 15px;
+  background-color: #212529;
+  background-image: linear-gradient(90deg, #209cee, #92cc41, #f7d41d, #e76e55, #209cee);
+  background-size: 200%;
+  background-repeat: repeat;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: animate 0.75s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    background-position: 200%;
+  }
+}
+@media (max-width: 540px) {
+  .waev-mode-selector {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .waev-mode-selector-btn {
+    width: 46%;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
+/*# sourceMappingURL=App.css.map */

@@ -110,35 +110,37 @@ function Highie() {
         setResults(false);
     };
     return (
-        <div className="App">
-            <div className="nes-container with-title is-dark">
-                <span className="title">Highie</span>
-                <div className="quiz_container">
-                    <div className="score_txt">
-                        <span className="nes-text">puntaje: </span>
-                        <span className="nes-text is-success">{score}</span>
+        <div className="waev-gamemode">
+            <div className="waev-gamemode-container nes-container with-title is-dark">
+                <span className="waev-gamemode-title title">Highie</span>
+                <div className="waev-gamemode-quiz-container">
+                    <div className="waev-gamemode-quiz-score">
+                        <span className="waev-gamemode-quiz-score-text nes-text">puntaje: </span>
+                        <span className="waev-gamemode-quiz-score-text nes-text is-success">{score}</span>
                     </div>
                     {showResults ? (
                         <div>
-                            < div className="results_txt">
-                                <span className="nes-text">{score} de {questions.length + 2} aciertos</span>
-                                <span className="nes-text">({(score / (questions.length + 2)) * 100}%)</span>
-                                <button onClick={() => restart()} type="button" className="btn nes-btn is-primary repeat_btn">repetir</button>
-                                <Link to="/waev" className="nes-btn btn repeat_btn">volver</Link>
+                            < div className="waev-gamemode-quiz-finalscore">
+                                <div className="waev-gamemode-quiz-finalscore-text">
+                                    <span className="nes-text">{score} de {questions.length + 2} aciertos</span>
+                                    <span className="nes-text">({(score / (questions.length + 2)) * 100}%)</span>
+                                </div>
+                                <div className="waev-gamemode-quiz-finalscore-btn">
+                                    <button onClick={() => restart()} type="button" className="nes-btn is-primary">repetir</button>
+                                    <Link to="/waev" className="nes-btn">volver</Link>
+                                </div>
                             </div>
                         </div>
                     ) : (
-                        < div className="question_box">
-                            <div className="btn freq_btn">
-                                <button onClick={() => play_frequency()} type="button" id="freq_btn" className="nes-btn is-success">frecuencia</button>
-                            </div>
-                            <span className="nes-text">{currentQuestion + 1} de {questions.length + 2}</span>
-                            <ul>
+                        < div className="waev-gamemode-quiz-alternatives">
+                            <button onClick={() => play_frequency()} type="button" className="waev-gamemode-quiz-alternatives-frequency nes-btn is-success">frecuencia</button>
+                            <span className="waev-gamemode-quiz-alternatives-text nes-text">{currentQuestion + 1} de {questions.length + 2}</span>
+                            <ul className="waev-gamemode-quiz-alternatives-list nes-list">
                                 {questions[questions_index_frequency].options.map((option) => {
                                     return (
-                                        <li onClick={() => optionClicked(option.isCorrect)} key={option.id}>
-                                            <a href="#" className="nes-badge">
-                                                <span className="btn question_option nes-text is-warning">{option.text}</span>
+                                        <li onClick={() => optionClicked(option.isCorrect)} key={option.id} className="waev-gamemode-quiz-alternatives-list-item">
+                                            <a className="nes-badge">
+                                                <span className="nes-text is-warning">{option.text}</span>
                                             </a>
                                         </li>
                                     )

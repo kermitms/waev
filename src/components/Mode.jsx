@@ -4,22 +4,24 @@ import Selector from "./Selector"
 
 function Mode() {
     return (
-        <div className="nes-container with-title is-dark">
-            <span className="title title-waev"><Link to="/waev">Waev</Link></span>
-            <p className="mode-title">Tienes 4 modos de práctica:</p>
-            <div className="lists">
-                <ul className="nes-list is-circle">
-                    <li className="nes-text gameboy-wannabe">Octa:</li><p> 1 octava - rango completo</p>
-                    <li className="nes-text gameboy-wannabe">Lowie:</li><p>  1/3 octava - frecuencias bajas</p>
-                    <li className="nes-text gameboy-wannabe">Midie:</li><p> 1/3 octava - frecuencias medias</p>
-                    <li className="nes-text gameboy-wannabe">Highie:</li><p> 1/3 octava - frecuencias altas</p>
-                </ul>
-            </div>
-            <div className="select_container">
-                <label htmlFor="dark_select">¿Qué frecuencias practicarás?</label>
+        <div className="waev-container nes-container with-title is-dark">
+            <Link to="/waev" className="waev-project-title title">Waev</Link>
+            <p className="waev-mode-title">Tienes 4 modos de práctica:</p>
+            <ul className="waev-mode-list nes-list">
+                <li className="waev-mode-name nes-text">Octa:</li>
+                <div className="waev-mode-name-desc"><p>1 octava</p><p>rango completo</p></div>
+                <li className="waev-mode-name nes-text">Lowie:</li>
+                <div className="waev-mode-name-desc"><p>1/3 octava</p><p>frecuencias bajas</p></div>
+                <li className="waev-mode-name nes-text">Midie:</li>
+                <div className="waev-mode-name-desc"><p>1/3 octava</p><p>frecuencias medias</p></div>
+                <li className="waev-mode-name nes-text">Highie:</li>
+                <div className="waev-mode-name-desc"><p>1/3 octava</p><p>frecuencias altas</p></div>
+            </ul>
+            <div className="waev-mode-selector-container">
+                <label className="waev-mode-selector-title">¿Qué frecuencias practicarás?</label>
                 <Selector />
             </div>
-        </div>
+        </div >
     )
 }
 

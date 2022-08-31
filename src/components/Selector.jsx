@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 function Selector() {
     return (
-        <div className="selector-btns">
-            <Link to="/waev/octa" className="nes-btn btn mode-selector is-primary">Octa</Link>
-            <Link to="/waev/lowie" className="nes-btn btn mode-selector is-success">Lowie</Link>
-            <Link to="/waev/midie" className="nes-btn btn mode-selector is-warning">Midie</Link>
-            <Link to="/waev/highie" className="nes-btn btn mode-selector is-error">Highie</Link>
+        <div className="waev-mode-selector">
+            <Link to="/waev/octa" className="waev-mode-selector-btn nes-btn is-primary">Octa</Link>
+            <Link to="/waev/lowie" className="waev-mode-selector-btn nes-btn is-success">Lowie</Link>
+            <Link to="/waev/midie" className="waev-mode-selector-btn nes-btn is-warning">Midie</Link>
+            <Link to="/waev/highie" className="waev-mode-selector-btn nes-btn is-error">Highie</Link>
         </div>
     )
 }

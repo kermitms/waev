@@ -1,0 +1,30 @@
+MODE:
+waev-container
+	waev-project-title
+	waev-mode-title
+	waev-mode-list
+		waev-mode-name
+		waev-mode-name-desc
+waev-mode-selector
+	waev-mode-selector-title
+
+SELECTOR:
+waev-mode-selector-container
+	waev-mode-selector-btn
+
+GAMEMODE:
+waev-gamemode
+waev-gamemode-container
+	waev-gamemode-title
+waev-gamemode-quiz-container
+	waev-gamemode-quiz-score
+		waev-gamemode-quiz-score-text
+	waev-gamemode-quiz-finalscore
+		waev-gamemode-quiz-finalscore-text
+		waev-gamemode-quiz-finalscore-btn
+
+	waev-gamemode-quiz-alternatives
+		waev-gamemode-quiz-alternatives-frequency
+		waev-gamemode-quiz-alternatives-text
+		waev-gamemode-quiz-alternatives-list
+		waev-gamemode-quiz-alternatives-list-item
