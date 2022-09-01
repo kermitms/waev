@@ -5,7 +5,7 @@ $red: #e76e55;
 
 #root {
   max-width: 640px;
-  margin: 0 auto;
+  margin: 25px auto;
   padding: 1rem;
 }
 
@@ -39,6 +39,10 @@ a:active {
   .waev-mode-selector{
     display: flex;
     justify-content: space-evenly;
+  }
+
+  .waev-mode-selector-title{
+    margin: 8px 0px;
   }
   
   .waev-mode-selector-btn{

@@ -5,7 +5,9 @@ import Selector from "./Selector"
 function Mode() {
     return (
         <div className="waev-container nes-container with-title is-dark">
-            <Link to="/waev" className="waev-project-title title">Waev</Link>
+            <div className="waev-project-desc title">
+                <span className="waev-project-title">Waev</span>
+            </div>
             <p className="waev-mode-title">Tienes 4 modos de práctica:</p>
             <ul className="waev-mode-list nes-list">
                 <li className="waev-mode-name nes-text">Octa:</li>
