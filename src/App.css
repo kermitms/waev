@@ -9,6 +9,10 @@
   padding-inline-start: 0px;
 }
 
+.waev-btn:active {
+  transform: translateY(2px);
+}
+
 a,
 a:hover,
 a:focus,

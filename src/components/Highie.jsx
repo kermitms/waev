@@ -126,21 +126,21 @@ function Highie() {
                                     <span className="nes-text">({(score / (questions.length + 2)) * 100}%)</span>
                                 </div>
                                 <div className="waev-gamemode-quiz-finalscore-btn">
-                                    <button onClick={() => restart()} type="button" className="nes-btn is-primary">repetir</button>
-                                    <Link to="/waev" className="nes-btn">volver</Link>
+                                    <button onClick={() => restart()} type="button" className="waev-btn nes-btn is-primary">repetir</button>
+                                    <Link to="/waev" className="waev-btn nes-btn">volver</Link>
                                 </div>
                             </div>
                         </div>
                     ) : (
                         < div className="waev-gamemode-quiz-alternatives">
-                            <button onClick={() => play_frequency()} type="button" className="waev-gamemode-quiz-alternatives-frequency nes-btn is-success">frecuencia</button>
+                            <button onClick={() => play_frequency()} type="button" className="waev-gamemode-quiz-alternatives-frequency waev-btn nes-btn is-success">frecuencia</button>
                             <span className="waev-gamemode-quiz-alternatives-text nes-text">{currentQuestion + 1} de {questions.length + 2}</span>
                             <ul className="waev-gamemode-quiz-alternatives-list nes-list">
                                 {questions[questions_index_frequency].options.map((option) => {
                                     return (
                                         <li onClick={() => optionClicked(option.isCorrect)} key={option.id} className="waev-gamemode-quiz-alternatives-list-item">
                                             <a className="nes-badge">
-                                                <span className="nes-text is-warning">{option.text}</span>
+                                                <span className="waev-btn nes-text is-warning">{option.text}</span>
                                             </a>
                                         </li>
                                     )
