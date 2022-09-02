@@ -137,7 +137,7 @@ function Lowie() {
                                 </div>
                                 <div className="waev-gamemode-quiz-finalscore-btn">
                                     <button onClick={() => restart()} type="button" className="waev-btn nes-btn is-primary">repetir</button>
-                                    <Link to="/waev" className="waev-btn nes-btn">volver</Link>
+                                    <Link to='/' className="waev-btn nes-btn">volver</Link>
                                 </div>
                             </div>
                         </div>
@@ -149,7 +149,7 @@ function Lowie() {
                                 {questions[questions_index_frequency].options.map((option) => {
                                     return (
                                         <li onClick={() => optionClicked(option.isCorrect)} key={option.id} className="waev-gamemode-quiz-alternatives-list-item">
-                                            <a href="#" className="nes-badge">
+                                            <a className="nes-badge">
                                                 <span className="waev-btn nes-text is-warning">{option.text}</span>
                                             </a>
                                         </li>

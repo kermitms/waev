@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import Selector from "./Selector"
 
 function Mode() {

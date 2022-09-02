@@ -127,7 +127,7 @@ function Highie() {
                                 </div>
                                 <div className="waev-gamemode-quiz-finalscore-btn">
                                     <button onClick={() => restart()} type="button" className="waev-btn nes-btn is-primary">repetir</button>
-                                    <Link to="/waev" className="waev-btn nes-btn">volver</Link>
+                                    <Link to='/' className="waev-btn nes-btn">volver</Link>
                                 </div>
                             </div>
                         </div>

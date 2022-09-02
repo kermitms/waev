@@ -11,11 +11,11 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route exact path='/waev' element={< Mode />}></Route>
-        <Route exact path='/waev/octa' element={< Octa />}></Route>
-        <Route exact path='/waev/lowie' element={< Lowie />}></Route>
-        <Route exact path='/waev/midie' element={< Midie />}></Route>
-        <Route exact path='/waev/highie' element={< Highie />}></Route>
+        <Route exact path='/' element={< Mode />}></Route>
+        <Route path='/octa' element={< Octa />}></Route>
+        <Route path='/lowie' element={< Lowie />}></Route>
+        <Route path='/midie' element={< Midie />}></Route>
+        <Route path='/highie' element={< Highie />}></Route>
       </Routes>
     </div>
   )
