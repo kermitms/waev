@@ -22,6 +22,11 @@ function Mode() {
                 <label className="waev-mode-selector-title">¿Qué frecuencias practicarás?</label>
                 <Selector />
             </div>
+            <div className="waev-credit-box">
+                <br /><br />
+                <i class="waev-credit-igicon nes-icon is-small instagram"></i>
+                <span className="waev-credit-name">@menamemanuel</span>
+            </div>
         </div >
     )
 }

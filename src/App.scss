@@ -14,9 +14,22 @@ $red: #e76e55;
   padding-inline-start: 0px;
 }
 
-.waev-btn:active{
+.waev-credit-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  .waev-credit-igicon {
+    background: transparent;
+    margin: 2px;
+  }
+  .waev-credit-name {
+    font-size: 0.6rem;
+  }
+}
+
+.waev-btn:active {
   transform: translateY(2px);
-}    
+}
 
 a,
 a:hover,
@@ -28,75 +41,75 @@ a:active {
 
 .waev-mode-name-desc {
   font-size: 0.8rem;
-  p:first-child{
+  p:first-child {
     margin: 0px;
   }
 }
 
-.waev-mode-selector-container{
+.waev-mode-selector-container {
   text-align: center;
 
-  .waev-mode-selector{
+  .waev-mode-selector {
     display: flex;
     justify-content: space-evenly;
   }
 
-  .waev-mode-selector-title{
+  .waev-mode-selector-title {
     margin: 8px 0px;
   }
-  
-  .waev-mode-selector-btn{
+
+  .waev-mode-selector-btn {
     width: 120px;
   }
 }
 
-.waev-gamemode{
+.waev-gamemode {
   display: flex;
   justify-content: center;
 
-  .waev-gamemode-container{
+  .waev-gamemode-container {
     width: 375px;
   }
 
-  .waev-gamemode-quiz-score{
+  .waev-gamemode-quiz-score {
     padding: 5px 0;
     text-align: center;
   }
 
-  .waev-gamemode-quiz-alternatives{
+  .waev-gamemode-quiz-alternatives {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    li{
+
+    li {
       padding: 5px 0;
     }
-  
-    .waev-gamemode-quiz-alternatives-text{
+
+    .waev-gamemode-quiz-alternatives-text {
       padding: 10px 0;
     }
   }
 }
 
-.waev-gamemode-quiz-finalscore{
-  .waev-gamemode-quiz-finalscore-text{
+.waev-gamemode-quiz-finalscore {
+  .waev-gamemode-quiz-finalscore-text {
     padding: 5px 0;
     text-align: center;
-    font-size: .8rem;
+    font-size: 0.8rem;
     display: flex;
     flex-direction: column;
 
-    span{
+    span {
       padding: 5px 0;
     }
   }
 
-  .waev-gamemode-quiz-finalscore-btn{
+  .waev-gamemode-quiz-finalscore-btn {
     display: flex;
     flex-direction: column;
   }
 }
-  
+
 .waev-mode-name {
   margin-top: 15px;
   background-color: #212529;
@@ -108,7 +121,7 @@ a:active {
   -webkit-background-clip: text;
   animation: animate 0.75s linear infinite;
 }
-  
+
 @keyframes animate {
   0% {
     background-position: 0%;
@@ -117,17 +130,16 @@ a:active {
   100% {
     background-position: 200%;
   }
-
 }
 
 @media (max-width: 540px) {
-  .waev-mode-selector{
+  .waev-mode-selector {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
 
-  .waev-mode-selector-btn{
+  .waev-mode-selector-btn {
     width: 46%;
   }
 }

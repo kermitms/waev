@@ -9,6 +9,19 @@
   padding-inline-start: 0px;
 }
 
+.waev-credit-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.waev-credit-box .waev-credit-igicon {
+  background: transparent;
+  margin: 2px;
+}
+.waev-credit-box .waev-credit-name {
+  font-size: 0.6rem;
+}
+
 .waev-btn:active {
   transform: translateY(2px);
 }
