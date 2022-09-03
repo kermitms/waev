@@ -23,7 +23,7 @@ function Mode() {
                 <Selector />
             </div>
             <div className="waev-credit-box">
-                <br /><br />
+                <br />
                 <i class="waev-credit-igicon nes-icon is-small instagram"></i>
                 <span className="waev-credit-name">@menamemanuel</span>
             </div>
