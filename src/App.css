@@ -10,6 +10,7 @@
 }
 
 .waev-credit-box {
+  margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
